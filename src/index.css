@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can go here */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling on the main page */
+}
+
+canvas {
+  display: block;
+}
