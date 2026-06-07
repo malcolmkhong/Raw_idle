@@ -1,0 +1,78 @@
+{
+  "Production": [
+    {
+      "nodeId": "prod_1",
+      "name": "Increased Extraction I",
+      "description": "Increases base production rate of all extractors by 10%.",
+      "icon": "extractor_icon.png",
+      "tier": 0,
+      "prerequisites": [],
+      "cost": 100,
+      "effect": {"type": "production_bonus", "value": 0.1},
+      "unlockedAt": null
+    },
+    {
+      "nodeId": "prod_2",
+      "name": "Advanced Drills",
+      "description": "Unlocks Advanced Drills, significantly boosting raw material extraction.",
+      "icon": "advanced_drill_icon.png",
+      "tier": 1,
+      "prerequisites": ["prod_1"],
+      "cost": 250,
+      "effect": {"type": "unlock_building", "buildingId": "advanced_drills"},
+      "unlockedAt": null
+    }
+  ],
+  "Efficiency": [
+    {
+      "nodeId": "eff_1",
+      "name": "Basic Optimization",
+      "description": "Reduces energy consumption of all buildings by 5%.",
+      "icon": "efficiency_icon.png",
+      "tier": 0,
+      "prerequisites": [],
+      "cost": 120,
+      "effect": {"type": "energy_reduction", "value": 0.05},
+      "unlockedAt": null
+    }
+  ],
+  "Automation": [
+    {
+      "nodeId": "auto_1",
+      "name": "Basic Assemblers",
+      "description": "Unlocks Basic Assemblers for automated component crafting.",
+      "icon": "assembler_icon.png",
+      "tier": 0,
+      "prerequisites": [],
+      "cost": 150,
+      "effect": {"type": "unlock_building", "buildingId": "basic_assembler"},
+      "unlockedAt": null
+    }
+  ],
+  "Logistics": [
+    {
+      "nodeId": "log_1",
+      "name": "Enhanced Storage I",
+      "description": "Increases storage capacity for all resources by 20%.",
+      "icon": "storage_icon.png",
+      "tier": 0,
+      "prerequisites": [],
+      "cost": 80,
+      "effect": {"type": "storage_bonus", "value": 0.2},
+      "unlockedAt": null
+    }
+  ],
+  "Energy": [
+    {
+      "nodeId": "eng_1",
+      "name": "Solar Panel I",
+      "description": "Unlocks basic Solar Panels for renewable energy generation.",
+      "icon": "solar_panel_icon.png",
+      "tier": 0,
+      "prerequisites": [],
+      "cost": 200,
+      "effect": {"type": "unlock_building", "buildingId": "solar_panel_1"},
+      "unlockedAt": null
+    }
+  ]
+}
