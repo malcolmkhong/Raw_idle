@@ -33,6 +33,23 @@ const basicExtractor = {
 buildingsMap.set(basicExtractor.id, basicExtractor);
 gameState.buildings.push(basicExtractor);
 gameState.resources.push(wood);
+const basicGenerator = {
+    id: 'generator-001',
+    name: 'Basic Power Generator',
+    type: 'generator',
+    tier: 1,
+    efficiency: 1.0,
+    baseProductionRate: 0,
+    inputs: [],
+    outputs: [],
+    storageCapacity: [],
+    currentStorage: [],
+    energyProduction: 5,
+    energyConsumption: 0,
+    connectedBuildings: [],
+};
+buildingsMap.set(basicGenerator.id, basicGenerator);
+gameState.buildings.push(basicGenerator);
 const productionEngine = new productionEngine_1.ProductionEngine();
 const storageSystem = new storageSystem_1.StorageSystem(buildingsMap);
 const energySystem = new energySystem_1.EnergySystem(buildingsMap);

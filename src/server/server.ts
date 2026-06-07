@@ -49,6 +49,7 @@ const basicGenerator: Building = {
     storageCapacity: [],
     currentStorage: [],
     energyProduction: 5, 
+    energyConsumption: 0,
     connectedBuildings: [],
 };
 buildingsMap.set(basicGenerator.id, basicGenerator);

@@ -11,8 +11,8 @@ export class EnergySystem {
         let totalProduction = 0;
         this.buildings.forEach(building => {
             // Assume energy generation is a type of building with defined output
-            if (building.type === 'extractor' && building.outputs.some(output => output.resource.id === 'energy')) { // Simplified check
-                totalProduction += building.baseProductionRate * building.efficiency;
+            if (building.energyProduction) {
+                totalProduction += building.energyProduction * building.efficiency;
             }
         });
         return totalProduction;
