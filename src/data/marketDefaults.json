@@ -1,0 +1,25 @@
+export default {
+    "materials": [
+        { "name": "Iron Ore", "basePrice": 10, "supply": 1000, "demand": 800 },
+        { "name": "Copper Ore", "basePrice": 12, "supply": 900, "demand": 850 },
+        { "name": "Coal", "basePrice": 5, "supply": 1200, "demand": 700 },
+        { "name": "Bauxite", "basePrice": 8, "supply": 700, "demand": 600 },
+        { "name": "Silicon Ore", "basePrice": 15, "supply": 600, "demand": 700 },
+        { "name": "Uranium Ore", "basePrice": 100, "supply": 100, "demand": 50 },
+        { "name": "Oil", "basePrice": 20, "supply": 800, "demand": 900 },
+        { "name": "Wood", "basePrice": 7, "supply": 1100, "demand": 750 },
+        { "name": "Rubber", "basePrice": 9, "supply": 750, "demand": 650 },
+        { "name": "Plastic", "basePrice": 18, "supply": 600, "demand": 800 },
+        { "name": "Steel", "basePrice": 25, "supply": 500, "demand": 600 },
+        { "name": "Copper Ingot", "basePrice": 30, "supply": 450, "demand": 550 },
+        { "name": "Aluminum", "basePrice": 22, "supply": 400, "demand": 480 },
+        { "name": "Silicon Wafer", "basePrice": 40, "supply": 300, "demand": 400 },
+        { "name": "Circuit Board", "basePrice": 60, "supply": 200, "demand": 350 },
+        { "name": "Battery", "basePrice": 50, "supply": 250, "demand": 300 },
+        { "name": "Engine", "basePrice": 80, "supply": 150, "demand": 250 },
+        { "name": "显示器", "basePrice": 70, "supply": 180, "demand": 280 },
+        { "name": "机器人", "basePrice": 150, "supply": 100, "demand": 180 },
+        { "name": "汽车", "basePrice": 300, "supply": 50, "demand": 100 }
+    ],
+    "volatilityFactor": 0.05
+};

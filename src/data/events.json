@@ -1,0 +1,145 @@
+import { EventEffect } from "../types/events";
+
+export const eventData = {
+    "events": [
+        {
+            "id": "market_crash_001",
+            "name": "市场崩盘",
+            "description": "股票市场大幅下跌，所有材料价格暴跌。",
+            "type": "Market Crash",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "all", "percentageChange": -20, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "material_shortage_iron",
+            "name": "铁矿石短缺",
+            "description": "全球铁矿石供应紧张，导致价格飙升，生产速度下降。",
+            "type": "Material Shortage",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "铁矿石", "percentageChange": 30, "isPercentage": true },
+                { "type": EventEffect.ProductionEfficiency, "material": "铁", "percentageChange": -15, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "demand_spike_copper",
+            "name": "铜需求激增",
+            "description": "电子产品行业对铜的需求突然增加，铜价上涨。",
+            "type": "Demand Spike",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "铜", "percentageChange": 25, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "natural_disaster_flood",
+            "name": "特大洪灾",
+            "description": "主要生产区域发生洪灾，影响原材料供应。",
+            "type": "Natural Disaster",
+            "effects": [
+                { "type": EventEffect.ResourceAvailability, "material": "木材", "percentageChange": -40, "isPercentage": true },
+                { "type": EventEffect.ResourceAvailability, "material": "橡胶", "percentageChange": -30, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "worker_strike_001",
+            "name": "工人罢工",
+            "description": "主要工厂工人罢工，导致生产效率大幅下降。",
+            "type": "Worker Strike",
+            "effects": [
+                { "type": EventEffect.WorkerEfficiency, "percentageChange": -20, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "technical_breakthrough_001",
+            "name": "技术突破",
+            "description": "新的生产技术被研发出来，提高了所有生产线的效率。",
+            "type": "Technical Breakthrough",
+            "effects": [
+                { "type": EventEffect.ProductionEfficiency, "material": "all", "percentageChange": 10, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "regulatory_change_001",
+            "name": "环境法规收紧",
+            "description": "政府出台更严格的环境法规，增加了生产成本。",
+            "type": "Regulatory Change",
+            "effects": [
+                { "type": EventEffect.MaintenanceCost, "percentageChange": 10, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "supply_abundance_coal",
+            "name": "煤炭供应过剩",
+            "description": "新煤矿被发现并投入生产，煤炭价格下跌。",
+            "type": "Supply Abundance",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "煤", "percentageChange": -20, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "energy_crisis_001",
+            "name": "能源危机",
+            "description": "全球能源价格飙升，运营成本急剧增加。",
+            "type": "Energy Crisis",
+            "effects": [
+                { "type": EventEffect.EnergyCost, "percentageChange": 30, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "economic_boom_001",
+            "name": "经济繁荣",
+            "description": "全球经济繁荣，所有商品需求和价格普遍上涨。",
+            "type": "Economic Boom",
+            "effects": [
+                { "type": EventEffect.DemandChange, "material": "all", "percentageChange": 15, "isPercentage": true },
+                { "type": EventEffect.MarketPriceChange, "material": "all", "percentageChange": 10, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "new_resource_discovery_lithium",
+            "name": "发现锂矿",
+            "description": "发现大型锂矿床，增加了锂的全球供应。",
+            "type": "New Resource Discovery",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "锂", "percentageChange": -15, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "research_breakthrough_ai",
+            "name": "AI研发突破",
+            "description": "AI技术在研发中取得突破，加速了所有科技研究。",
+            "type": "Research Breakthrough",
+            "effects": [
+                { "type": EventEffect.ResearchSpeed, "percentageChange": 25, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "supply_chain_optimization_001",
+            "name": "供应链优化",
+            "description": "物流技术改进，降低了原材料运输成本，提高了效率。",
+            "type": "Supply Chain Optimization",
+            "effects": [
+                { "type": EventEffect.ProductionEfficiency, "material": "all", "percentageChange": 5, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "global_trade_agreement_001",
+            "name": "全球贸易协定",
+            "description": "主要贸易国签署协定，促进了全球贸易，降低了进口商品成本。",
+            "type": "Regulatory Change",
+            "effects": [
+                { "type": EventEffect.MarketPriceChange, "material": "进口商品", "percentageChange": -10, "isPercentage": true }
+            ]
+        },
+        {
+            "id": "cyber_attack_001",
+            "name": "网络攻击",
+            "description": "关键基础设施遭受网络攻击，导致生产中断和效率下降。",
+            "type": "Technical Disaster",
+            "effects": [
+                { "type": EventEffect.ProductionEfficiency, "material": "all", "percentageChange": -10, "isPercentage": true },
+                { "type": EventEffect.WorkerEfficiency, "percentageChange": -5, "isPercentage": true }
+            ]
+        }
+    ]
+};
